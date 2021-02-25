@@ -1,7 +1,6 @@
 <?php
 
 use Illuminate\Support\Str;
-use Nette\PhpGenerator\ClassType;
 use Nette\PhpGenerator\PhpNamespace;
 use PierreMiniggio\GoogleTokenRefresher\AccessTokenProvider;
 
@@ -83,8 +82,9 @@ if (empty($namespace) || empty($folder)) {
     die('Bad composer.json autoload psr-4');
 }
 
-$namespace = substr($namespace, 0, -1);
-$folder = __DIR__ . DIRECTORY_SEPARATOR . $folder . strtoupper($locale);
+$upperLocale = strtoupper($locale);
+$namespace = substr($namespace, 0, -1) . '\\' . $upperLocale;
+$folder = __DIR__ . DIRECTORY_SEPARATOR . $folder . $upperLocale;
 
 $namespace = new PhpNamespace($namespace);
 $className = 'CategoryEnum';

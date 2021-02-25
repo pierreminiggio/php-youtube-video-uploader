@@ -10,8 +10,9 @@
     ],
     "minimum-stability": "stable",
     "require": {
-        "php": "^7.2 || ^8.0",
-        "pierreminiggio/google-api-get-access-token-from-refresh-token": "^1.0"
+        "php": "^8.0",
+        "pierreminiggio/google-api-get-access-token-from-refresh-token": "^1.0",
+        "google/apiclient": "^2.9"
     },
     "autoload": {
         "psr-4": {
@@ -19,7 +20,8 @@
         }
     },
     "scripts": {
-        "pull-categories": "php pullCategories.php"
+        "pull-categories": "php pullCategories.php",
+        "test": "php test.php"
     },
     "require-dev": {
         "illuminate/support": "^8.29",

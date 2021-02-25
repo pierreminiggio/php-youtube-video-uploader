@@ -1,6 +1,6 @@
 <?php
 
-namespace PierreMiniggio\YoutubeVideoUploader;
+namespace PierreMiniggio\YoutubeVideoUploader\FR;
 
 final class CategoryEnum
 {
