@@ -22,6 +22,7 @@
         "pull-categories": "php pullCategories.php"
     },
     "require-dev": {
-        "illuminate/support": "^8.29"
+        "illuminate/support": "^8.29",
+        "nette/php-generator": "^3.5"
     }
 }
