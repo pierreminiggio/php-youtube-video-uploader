@@ -1,0 +1,58 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "29a03173c89a0f72c9b4c53d7b1d562b",
+    "packages": [
+        {
+            "name": "pierreminiggio/google-api-get-access-token-from-refresh-token",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pierreminiggio/php-google-api-get-access-token-from-refresh-token.git",
+                "reference": "54fc38a6582bf219791b52ffa01e93c65a8dfc0a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pierreminiggio/php-google-api-get-access-token-from-refresh-token/zipball/54fc38a6582bf219791b52ffa01e93c65a8dfc0a",
+                "reference": "54fc38a6582bf219791b52ffa01e93c65a8dfc0a",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.2 || ^8.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "PierreMiniggio\\GoogleTokenRefresher\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Pierre MINIGGIO",
+                    "email": "pierre@miniggiodev.fr"
+                }
+            ],
+            "description": "Get Google API Access Token using your Refresh Token",
+            "support": {
+                "issues": "https://github.com/pierreminiggio/php-google-api-get-access-token-from-refresh-token/issues",
+                "source": "https://github.com/pierreminiggio/php-google-api-get-access-token-from-refresh-token/tree/1.0.1"
+            },
+            "time": "2021-02-25T16:34:37+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {
+        "php": "^7.2 || ^8.0"
+    },
+    "platform-dev": [],
+    "plugin-api-version": "2.0.0"
+}
