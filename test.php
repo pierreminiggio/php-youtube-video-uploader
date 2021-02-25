@@ -37,10 +37,11 @@ $uploader->upload(
     $clientSecret,
     $refreshToken,
     new YoutubeVideo(
-        'test titre',
-        'test description',
+        'CoffeeZilla is the best',
+        'And I love him',
+        ['CoffeeZilla', 'love', 'Coffee'],
         CategoryEnum::EDUCATION,
-        PrivacyStatusEnum::UNLISTED_VIDEO,
-        'https://old.miniggiodev.fr/videos/SWAL2.mp4'
+        PrivacyStatusEnum::PUBLIC_VIDEO,
+        'https://youtube-video-random-clip-api.miniggiodev.fr/public/cache/kBr7LEUV6iA_cut.mp4'
     )
 );

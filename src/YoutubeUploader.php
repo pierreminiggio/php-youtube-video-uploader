@@ -37,6 +37,8 @@ class YoutubeUploader
         $videoSnippet->setCategoryId((string) $video->categoryId);
         $videoSnippet->setTitle($video->title);
         $videoSnippet->setDescription($video->description);
+        $videoSnippet->setTags($video->tags);
+        //$videoSnippet->setPublishedAt((new \DateTime('2021-02-28 10:00:00'))->format(\DateTimeInterface::ISO8601));
         $videoToUpload->setSnippet($videoSnippet);
 
         $videoStatus = new Google_Service_YouTube_VideoStatus();
@@ -47,13 +49,14 @@ class YoutubeUploader
         $response = $service->videos->insert(
             'snippet,status',
             $videoToUpload,
-            array(
+            [
                 'data' => file_get_contents($video->filePathOrURL),
                 'mimeType' => 'application/octet-stream',
                 'uploadType' => 'multipart'
-            )
+            ]
         );
 
         var_dump($response);
+        var_dump($response->id);
     }
 }
