@@ -20,5 +20,8 @@
     },
     "scripts": {
         "pull-categories": "php pullCategories.php"
+    },
+    "require-dev": {
+        "illuminate/support": "^8.29"
     }
 }

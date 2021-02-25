@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Str;
 use PierreMiniggio\GoogleTokenRefresher\AccessTokenProvider;
 
 $useLikeThis = 'Use like this:'
@@ -59,4 +60,11 @@ if (empty($jsonResponse['items'])) {
     die('Error: No "items" key in JSON response');
 }
 
-var_dump($jsonResponse['items']);
+$categories = [];
+
+$items = $jsonResponse['items'];
+
+foreach ($items as $item) {
+    $categories[strtoupper(Str::slug($item['snippet']['title'], '_'))] = (int) $item['id'];
+}
+
